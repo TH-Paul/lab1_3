@@ -1,7 +1,11 @@
 package demo;
 
 public class Main {
-
+    /**
+     * transforma un array de int in string
+     * @param array - de int
+     * @return string
+     */
     public static String array_to_string(int[] array){
         //transformam array-ul de int intr-un array cu aceleasi valori, dar de tip string
         String[] new_array = new String[array.length];
