@@ -17,6 +17,11 @@ public class Main {
         return String.join("", new_array);
     }
 
+    /**
+     * transforma un string intr-un array de int
+     * @param string
+     * @return array de int
+     */
     public static int[] string_to_array(String string){
         //obtinem un array dintr-un string dat
         int[] result = new int[string.length()];
@@ -28,6 +33,12 @@ public class Main {
         return result;
     }
 
+    /**
+     *
+     * @param a - array de int
+     * @param b - array de int
+     * @return suma - array de int
+     */
     public static int[] summe(int[] a, int[] b){
         //transformam numerele sub forma de array in long si facem suma
         long a1 = Long.parseLong(array_to_string(a));
@@ -40,6 +51,12 @@ public class Main {
         return string_to_array(res);
     }
 
+    /**
+     *
+     * @param a - array de int
+     * @param b - array de int
+     * @return diferenta - array de int
+     */
     public static int[] dif(int[] a, int[] b){
         //transformam numerele sub forma de array in long si facem diferenta
         long a1 = Long.parseLong(array_to_string(a));
@@ -52,6 +69,12 @@ public class Main {
         return string_to_array(res);
     }
 
+    /**
+     *
+     * @param a - array de int
+     * @param b - int
+     * @return rezultatul inmultirii - array de int
+     */
     public static int[] mul(int[] a, int b){
         long a1 = Long.parseLong(array_to_string(a));
         long mul = a1 * b;
@@ -61,6 +84,12 @@ public class Main {
         return string_to_array(res);
     }
 
+    /**
+     *
+     * @param a - array de int
+     * @param b - int
+     * @return rezultatul impartirii - array de int
+     */
     public static int[] div(int[] a, int b){
         long a1 = Long.parseLong(array_to_string(a));
         long div = a1 / b;
