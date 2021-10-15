@@ -1,7 +1,11 @@
 package demo;
 
 public class Main {
-
+    /**
+     * transforma un array in string
+     * @param array - de int
+     * @return string-ul respectiv
+     */
     public static String array_to_string(int[] array){
         //transformam array-ul de int intr-un array cu aceleasi valori, dar de tip string
         String[] new_array = new String[array.length];
@@ -13,6 +17,11 @@ public class Main {
         return String.join("", new_array);
     }
 
+    /**
+     * transforma un string in array
+     * @param string
+     * @return array de int
+     */
     public static int[] string_to_array(String string){
         //obtinem un array dintr-un string dat
         int[] result = new int[string.length()];
@@ -24,6 +33,12 @@ public class Main {
         return result;
     }
 
+    /**
+     *
+     * @param a - int de array
+     * @param b - int de array
+     * @return suma - int de array
+     */
     public static int[] summe(int[] a, int[] b){
         //transformam numerele sub forma de array in long si facem suma
         long a1 = Long.parseLong(array_to_string(a));
@@ -36,6 +51,12 @@ public class Main {
         return string_to_array(res);
     }
 
+    /**
+     *
+     * @param a - int de array
+     * @param b - int de array
+     * @return diferenta - int de array
+     */
     public static int[] dif(int[] a, int[] b){
         //transformam numerele sub forma de array in long si facem diferenta
         long a1 = Long.parseLong(array_to_string(a));
@@ -48,6 +69,12 @@ public class Main {
         return string_to_array(res);
     }
 
+    /**
+     *
+     * @param a - int de array
+     * @param b - int de array
+     * @return rezultatul inmultirii - int de array
+     */
     public static int[] mul(int[] a, int b){
         long a1 = Long.parseLong(array_to_string(a));
         long mul = a1 * b;
@@ -57,6 +84,12 @@ public class Main {
         return string_to_array(res);
     }
 
+    /**
+     *
+     * @param a - int de array
+     * @param b - int de array
+     * @return rezultatul impartirii - int de array
+     */
     public static int[] div(int[] a, int b){
         long a1 = Long.parseLong(array_to_string(a));
         long div = a1 / b;
@@ -77,7 +110,7 @@ public class Main {
         }
 
         int[] n3 = new int[]{8, 3, 0, 0, 0, 0, 0, 0, 0};
-        int[] n4 = new int[]{5, 4, 0, 0, 0, 0, 0, 0, 0};
+        int[] n4 = new int[]{9, 4, 0, 0, 0, 0, 0, 0, 0};
         int[] dif = dif(n3, n4);
 
         System.out.println("\nDifferenz: ");
@@ -85,8 +118,8 @@ public class Main {
             System.out.print(j);
         }
 
-        int[] n5 = new int[]{2, 3, 6, 0, 0, 0, 0, 0, 0};
-        int n6 = 2;
+        int[] n5 = new int[]{3, 3, 6, 0, 0, 0, 0, 0, 0};
+        int n6 = 3;
         int[] mul = mul(n5, n6);
 
         System.out.println("\nMultiplikation: ");
